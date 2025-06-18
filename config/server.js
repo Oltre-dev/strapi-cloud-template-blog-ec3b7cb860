@@ -6,10 +6,5 @@ module.exports = ({ env }) => ({
   },
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
-    defaultHeaders: {
-      Authorization: `Bearer ${env("GITHUB_WEBHOOK_TOKEN")}`,
-      "Content-Type": "application/json",
-      "User-Agent": "Strapi-Blog-Webhook/1.0",
-    },
   },
 });
