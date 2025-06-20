@@ -14,7 +14,7 @@
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
-    "x-generation-date": "2025-06-09T06:51:35.495Z"
+    "x-generation-date": "2025-06-20T08:15:37.364Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -33,15 +33,15 @@
       "description": "Production server"
     }
   ],
-  "externalDocs": {
-    "description": "Find out more",
-    "url": "https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html"
-  },
   "security": [
     {
       "bearerAuth": []
     }
   ],
+  "externalDocs": {
+    "description": "Find out more",
+    "url": "https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html"
+  },
   "paths": {
     "/about": {
       "get": {
@@ -3768,12 +3768,12 @@
         ],
         "properties": {
           "data": {
+            "required": [
+              "slug"
+            ],
             "type": "object",
             "properties": {
               "title": {
-                "type": "string"
-              },
-              "description": {
                 "type": "string"
               },
               "slug": {
@@ -3868,6 +3868,9 @@
       },
       "Article": {
         "type": "object",
+        "required": [
+          "slug"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -3876,9 +3879,6 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "slug": {
@@ -4502,9 +4502,6 @@
                 "name": {
                   "type": "string"
                 },
-                "slug": {
-                  "type": "string"
-                },
                 "articles": {
                   "type": "array",
                   "items": {
@@ -4517,9 +4514,6 @@
                         "type": "string"
                       },
                       "title": {
-                        "type": "string"
-                      },
-                      "description": {
                         "type": "string"
                       },
                       "slug": {
@@ -4727,6 +4721,9 @@
                       }
                     }
                   }
+                },
+                "slug": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -5958,12 +5955,12 @@
         ],
         "properties": {
           "data": {
+            "required": [
+              "slug"
+            ],
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
-              },
-              "slug": {
                 "type": "string"
               },
               "articles": {
@@ -5979,6 +5976,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "slug": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -6038,6 +6038,9 @@
       },
       "Tag": {
         "type": "object",
+        "required": [
+          "slug"
+        ],
         "properties": {
           "id": {
             "type": "number"
@@ -6046,9 +6049,6 @@
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "articles": {
@@ -6063,9 +6063,6 @@
                   "type": "string"
                 },
                 "title": {
-                  "type": "string"
-                },
-                "description": {
                   "type": "string"
                 },
                 "slug": {
@@ -6689,9 +6686,6 @@
                       "name": {
                         "type": "string"
                       },
-                      "slug": {
-                        "type": "string"
-                      },
                       "articles": {
                         "type": "array",
                         "items": {
@@ -6705,6 +6699,9 @@
                             }
                           }
                         }
+                      },
+                      "slug": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -6813,6 +6810,9 @@
                 }
               }
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",

@@ -9,11 +9,9 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
-    },
-    "slug": {
       "type": "string"
     },
     "articles": {
@@ -21,6 +19,11 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "tags"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
