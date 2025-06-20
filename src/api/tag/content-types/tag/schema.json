@@ -24,6 +24,12 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::video.video",
+      "mappedBy": "tags"
     }
   }
 }
