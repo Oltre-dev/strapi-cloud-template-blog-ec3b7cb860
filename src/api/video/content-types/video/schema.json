@@ -45,6 +45,9 @@
     },
     "publishDate": {
       "type": "datetime"
+    },
+    "metadata": {
+      "type": "text"
     }
   }
 }
