@@ -48,6 +48,9 @@
     },
     "metadata": {
       "type": "text"
+    },
+    "language": {
+      "type": "string"
     }
   }
 }

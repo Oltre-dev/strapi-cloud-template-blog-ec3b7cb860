@@ -514,6 +514,7 @@ export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     Description: Schema.Attribute.RichText;
     duration: Schema.Attribute.Integer;
+    language: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::video.video'> &
       Schema.Attribute.Private;
