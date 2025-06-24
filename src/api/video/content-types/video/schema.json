@@ -51,6 +51,12 @@
     },
     "language": {
       "type": "string"
+    },
+    "transcript": {
+      "type": "text"
+    },
+    "transcriptMetadata": {
+      "type": "text"
     }
   }
 }

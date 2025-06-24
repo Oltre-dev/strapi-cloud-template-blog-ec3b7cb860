@@ -524,6 +524,8 @@ export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
     tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
     thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Title: Schema.Attribute.String;
+    transcript: Schema.Attribute.Text;
+    transcriptMetadata: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

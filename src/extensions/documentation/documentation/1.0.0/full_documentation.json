@@ -14,7 +14,7 @@
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
-    "x-generation-date": "2025-06-24T14:24:46.583Z"
+    "x-generation-date": "2025-06-24T17:01:59.145Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5275,6 +5275,12 @@
                       "language": {
                         "type": "string"
                       },
+                      "transcript": {
+                        "type": "string"
+                      },
+                      "transcriptMetadata": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -7507,6 +7513,12 @@
                             "language": {
                               "type": "string"
                             },
+                            "transcript": {
+                              "type": "string"
+                            },
+                            "transcriptMetadata": {
+                              "type": "string"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -7814,6 +7826,12 @@
                 "type": "string"
               },
               "language": {
+                "type": "string"
+              },
+              "transcript": {
+                "type": "string"
+              },
+              "transcriptMetadata": {
                 "type": "string"
               },
               "locale": {
@@ -8917,6 +8935,12 @@
                       "language": {
                         "type": "string"
                       },
+                      "transcript": {
+                        "type": "string"
+                      },
+                      "transcriptMetadata": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -9033,6 +9057,12 @@
             "type": "string"
           },
           "language": {
+            "type": "string"
+          },
+          "transcript": {
+            "type": "string"
+          },
+          "transcriptMetadata": {
             "type": "string"
           },
           "createdAt": {
