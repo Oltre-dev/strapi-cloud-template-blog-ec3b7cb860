@@ -510,7 +510,7 @@ export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.RichText;
+    description: Schema.Attribute.RichText;
     duration: Schema.Attribute.Integer;
     language: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -519,11 +519,11 @@ export interface ApiVideoVideo extends Struct.CollectionTypeSchema {
     metadata: Schema.Attribute.Text;
     publicationDate: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'Title'>;
-    Source: Schema.Attribute.String;
+    slug: Schema.Attribute.UID;
+    source: Schema.Attribute.String;
     tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
     thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Title: Schema.Attribute.String;
+    title: Schema.Attribute.String;
     transcript: Schema.Attribute.Text;
     transcriptMetadata: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;

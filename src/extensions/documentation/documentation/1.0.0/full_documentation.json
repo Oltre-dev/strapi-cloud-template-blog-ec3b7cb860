@@ -14,7 +14,7 @@
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
-    "x-generation-date": "2025-06-29T06:21:12.853Z"
+    "x-generation-date": "2025-06-29T07:57:44.832Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5107,10 +5107,10 @@
                       "documentId": {
                         "type": "string"
                       },
-                      "Title": {
+                      "title": {
                         "type": "string"
                       },
-                      "Description": {
+                      "description": {
                         "type": "string"
                       },
                       "thumbnail": {
@@ -5242,7 +5242,7 @@
                           }
                         }
                       },
-                      "Source": {
+                      "source": {
                         "type": "string"
                       },
                       "slug": {
@@ -7345,10 +7345,10 @@
                             "documentId": {
                               "type": "string"
                             },
-                            "Title": {
+                            "title": {
                               "type": "string"
                             },
-                            "Description": {
+                            "description": {
                               "type": "string"
                             },
                             "thumbnail": {
@@ -7480,7 +7480,7 @@
                                 }
                               }
                             },
-                            "Source": {
+                            "source": {
                               "type": "string"
                             },
                             "slug": {
@@ -7778,10 +7778,10 @@
           "data": {
             "type": "object",
             "properties": {
-              "Title": {
+              "title": {
                 "type": "string"
               },
-              "Description": {
+              "description": {
                 "type": "string"
               },
               "thumbnail": {
@@ -7795,7 +7795,7 @@
                 ],
                 "example": "string or id"
               },
-              "Source": {
+              "source": {
                 "type": "string"
               },
               "slug": {
@@ -7899,10 +7899,10 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "thumbnail": {
@@ -8503,7 +8503,7 @@
               }
             }
           },
-          "Source": {
+          "source": {
             "type": "string"
           },
           "slug": {
@@ -8767,10 +8767,10 @@
                       "documentId": {
                         "type": "string"
                       },
-                      "Title": {
+                      "title": {
                         "type": "string"
                       },
-                      "Description": {
+                      "description": {
                         "type": "string"
                       },
                       "thumbnail": {
@@ -8902,7 +8902,7 @@
                           }
                         }
                       },
-                      "Source": {
+                      "source": {
                         "type": "string"
                       },
                       "slug": {

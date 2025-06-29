@@ -11,10 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     },
     "thumbnail": {
@@ -27,12 +27,11 @@
         "audios"
       ]
     },
-    "Source": {
+    "source": {
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "Title"
+      "type": "uid"
     },
     "duration": {
       "type": "integer"
