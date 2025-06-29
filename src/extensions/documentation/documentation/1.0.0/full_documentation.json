@@ -14,7 +14,7 @@
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
-    "x-generation-date": "2025-06-24T17:01:59.145Z"
+    "x-generation-date": "2025-06-29T06:21:12.853Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4167,12 +4167,12 @@
                   "example": "string or id"
                 }
               },
-              "publishDate": {
-                "type": "string",
-                "format": "date-time"
-              },
               "metadata": {
                 "type": "string"
+              },
+              "publicationDate": {
+                "type": "string",
+                "format": "date-time"
               },
               "locale": {
                 "type": "string"
@@ -5032,12 +5032,12 @@
                           }
                         }
                       },
-                      "publishDate": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
                       "metadata": {
                         "type": "string"
+                      },
+                      "publicationDate": {
+                        "type": "string",
+                        "format": "date-time"
                       },
                       "createdAt": {
                         "type": "string",
@@ -5265,7 +5265,7 @@
                           }
                         }
                       },
-                      "publishDate": {
+                      "publicationDate": {
                         "type": "string",
                         "format": "date-time"
                       },
@@ -5389,12 +5389,12 @@
               }
             }
           },
-          "publishDate": {
-            "type": "string",
-            "format": "date-time"
-          },
           "metadata": {
             "type": "string"
+          },
+          "publicationDate": {
+            "type": "string",
+            "format": "date-time"
           },
           "createdAt": {
             "type": "string",
@@ -7503,7 +7503,7 @@
                                 }
                               }
                             },
-                            "publishDate": {
+                            "publicationDate": {
                               "type": "string",
                               "format": "date-time"
                             },
@@ -7627,12 +7627,12 @@
                     }
                   }
                 },
-                "publishDate": {
-                  "type": "string",
-                  "format": "date-time"
-                },
                 "metadata": {
                   "type": "string"
+                },
+                "publicationDate": {
+                  "type": "string",
+                  "format": "date-time"
                 },
                 "createdAt": {
                   "type": "string",
@@ -7818,7 +7818,7 @@
                   "example": "string or id"
                 }
               },
-              "publishDate": {
+              "publicationDate": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -8692,12 +8692,12 @@
                           }
                         }
                       },
-                      "publishDate": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
                       "metadata": {
                         "type": "string"
+                      },
+                      "publicationDate": {
+                        "type": "string",
+                        "format": "date-time"
                       },
                       "createdAt": {
                         "type": "string",
@@ -8925,7 +8925,7 @@
                           }
                         }
                       },
-                      "publishDate": {
+                      "publicationDate": {
                         "type": "string",
                         "format": "date-time"
                       },
@@ -9049,7 +9049,7 @@
               }
             }
           },
-          "publishDate": {
+          "publicationDate": {
             "type": "string",
             "format": "date-time"
           },

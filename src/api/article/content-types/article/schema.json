@@ -42,11 +42,11 @@
       "target": "api::tag.tag",
       "mappedBy": "articles"
     },
-    "publishDate": {
-      "type": "datetime"
-    },
     "metadata": {
       "type": "text"
+    },
+    "publicationDate": {
+      "type": "datetime"
     }
   }
 }
