@@ -12,7 +12,7 @@ module.exports = {
     strapi.db.lifecycles.subscribe({
       // `models: []` => all content-types
       async beforeUpdate(event) {
-        const { where } = event.params;
+        const { where, data } = event.params;
         const uid = event.model?.uid;
 
         // Ignore everything qui n'appartient pas à l'API
@@ -20,11 +20,35 @@ module.exports = {
           return;
         }
 
+        const isConcerned =
+          uid === "api::article.article" || uid === "api::video.video";
+
+        const fieldsToSelect = isConcerned
+          ? ["publishedAt", "publicationDate"]
+          : ["publishedAt"];
+
+        const entry = await strapi.entityService.findOne(uid, where.id, {
+          fields: fieldsToSelect,
+        });
+
+        if (!entry) {
+          return;
+        }
+
         event.state = {
-          prev: await strapi.entityService.findOne(uid, where.id, {
-            fields: ["publishedAt"],
-          }),
+          prev: { publishedAt: entry.publishedAt },
         };
+
+        if (isConcerned) {
+          const isBeingPublished = data.publishedAt && !entry.publishedAt;
+          if (
+            isBeingPublished &&
+            data.publicationDate == null &&
+            entry.publicationDate == null
+          ) {
+            data.publicationDate = new Date();
+          }
+        }
       },
 
       async afterUpdate(event) {
@@ -42,13 +66,22 @@ module.exports = {
       },
 
       async afterCreate(event) {
-        const uid = event.model?.uid;
+        const { result, model } = event;
+        const uid = model?.uid;
         if (!isApiContentType(uid)) {
           return;
         }
 
-        const { result } = event;
         if (result.publishedAt) {
+          const isConcerned =
+            uid === "api::article.article" || uid === "api::video.video";
+          if (isConcerned && result.publicationDate == null) {
+            await strapi.entityService.update(uid, result.id, {
+              data: {
+                publicationDate: new Date(),
+              },
+            });
+          }
           await triggerGithubPublish();
         }
       },

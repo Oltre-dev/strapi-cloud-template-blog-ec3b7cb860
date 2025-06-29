@@ -43,7 +43,7 @@
       "target": "api::tag.tag",
       "inversedBy": "videos"
     },
-    "publishDate": {
+    "publicationDate": {
       "type": "datetime"
     },
     "metadata": {
